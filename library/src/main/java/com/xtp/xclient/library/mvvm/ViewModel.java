@@ -1,4 +1,4 @@
 package com.xtp.xclient.library.mvvm;
 
-public class Empty {
+public interface ViewModel {
 }

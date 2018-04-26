@@ -1,5 +1,5 @@
 # XClient
-> Retrofit + RxJava + MVVM-databinding + Dagger2 && Gank.Io、WanAndroid Api   
+> A demo app based on MVP + RxJava + Retrofit2 + Dagger2 .
 
 
 ## Libraries & References
