@@ -1,6 +1,6 @@
 package com.xtp.xclient.library.mvp;
 
-public interface BasePresenter<T extends BaseView> {
+public interface IBasePresenter<T extends IBaseView> {
 
     void attachView(T view);
 

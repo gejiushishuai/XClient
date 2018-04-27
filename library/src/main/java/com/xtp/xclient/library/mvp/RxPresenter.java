@@ -3,7 +3,7 @@ package com.xtp.xclient.library.mvp;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
-public class RxPresenter<T extends BaseView> implements BasePresenter<T> {
+public class RxPresenter<T extends IBaseView> implements IBasePresenter<T> {
 
     protected T mView;
     protected CompositeDisposable mCompositeDisposable;

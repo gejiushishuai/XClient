@@ -4,12 +4,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.xtp.xclient.library.mvp.BasePresenter;
-import com.xtp.xclient.library.mvp.BaseView;
+import com.xtp.xclient.library.mvp.IBasePresenter;
+import com.xtp.xclient.library.mvp.IBaseView;
 
 import javax.inject.Inject;
 
-public abstract class BaseActivity<T extends BasePresenter> extends AppCompatActivity implements BaseView {
+public abstract class BaseActivity<T extends IBasePresenter> extends AppCompatActivity implements IBaseView {
     @Inject
     protected T mPresenter;
 

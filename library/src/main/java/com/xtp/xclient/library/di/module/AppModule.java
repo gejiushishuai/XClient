@@ -1,8 +1,6 @@
-package com.xtp.xclient.library.di;
+package com.xtp.xclient.library.di.module;
 
 import android.app.Application;
-import android.content.Context;
-import android.content.SharedPreferences;
 
 import javax.inject.Singleton;
 
