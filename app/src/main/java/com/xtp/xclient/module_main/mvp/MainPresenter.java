@@ -26,8 +26,9 @@ public class MainPresenter extends RxPresenter<MainContract.View> {
                     public void accept(Boolean granted) {
                         if (granted) {
                             mView.refreshUI();
+                            mView.showErrorMsg("权限请求成功");
                         } else {
-                            mView.showErrorMsg("下载应用需要文件写入权限哦~");
+                            mView.showErrorMsg("权限请求失败");
                         }
                     }
                 })

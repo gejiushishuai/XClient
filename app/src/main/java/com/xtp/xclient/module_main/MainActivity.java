@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.xtp.xclient.R;
+import com.xtp.xclient.app.XApplication;
 import com.xtp.xclient.library.base.BaseActivity;
 import com.xtp.xclient.library.util.ToastUtil;
 import com.xtp.xclient.module_main.di.DaggerMainComponent;
@@ -17,11 +18,14 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mPresenter.checkPermissions();
     }
 
     @Override
     protected void initInject() {
         DaggerMainComponent.builder()
+                .appComponent(XApplication.getAppComponent())
                 .mainModule(new MainModule(this))
                 .build()
                 .inject(this);
